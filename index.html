@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111815" />
+    <meta name="description" content="Anis Amniali, développeur web full-stack. Création de sites web, d’applications et d’API sur mesure." />
+    <title>Anis Amniali | Développeur web full-stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#accueil" aria-label="Accueil">AA<span>.</span></a>
+      <nav aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#formation">Formation</a>
+        <a href="#projets">Réalisations</a>
+        <a href="#profil">À propos</a>
+      </nav>
+      <a class="header-cta" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero page-width" id="accueil">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DÉVELOPPEMENT WEB · SUR MESURE</p>
+          <h1 id="hero-title"></h1>
+          <p class="hero-intro" id="hero-intro"></p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#services">Découvrir mes services <span aria-hidden="true">↓</span></a>
+            <a class="text-link" id="hero-contact" href="#contact">Demander un devis <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-location" id="hero-stack"></p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-art-label"><span>VOTRE PARTENAIRE DIGITAL</span><span>01 — 03</span></div>
+          <div class="portrait-frame"><img src="https://avatars.githubusercontent.com/u/113100343?v=4" alt="Avatar GitHub d’Anis Amniali" /></div>
+          <div class="hero-art-caption"><span>DE L’IDÉE À LA MISE EN LIGNE</span><strong>UN WEB<br />QUI VOUS RESSEMBLE.</strong></div>
+          <span class="hero-art-index" aria-hidden="true">ANIS AMNIALI · DÉVELOPPEUR</span>
+        </div>
+        <div class="hero-footer"><span>WEB SUR MESURE, SANS COMPLEXITÉ</span><span>CONCEPTION · DÉVELOPPEMENT · CONSEIL</span><a href="#services" aria-label="Découvrir mes services">↓</a></div>
+      </section>
+
+      <section class="services section-band" id="services">
+        <div class="page-width">
+          <div class="section-heading">
+            <div><p class="eyebrow">01 / ACCOMPAGNEMENT</p><h2>Mes services<span class="accent">.</span></h2></div>
+            <p class="section-note">Des solutions web adaptées à votre activité, vos clients et vos objectifs.</p>
+          </div>
+          <div class="service-grid" id="service-list"></div>
+        </div>
+      </section>
+
+      <section class="learning page-width" id="formation">
+        <div class="section-heading">
+          <div><p class="eyebrow">FORMATION EN COURS · <span id="learning-year"></span></p><h2>Cette année, j’apprends<span class="accent">.</span></h2></div>
+          <p class="section-note">Un parcours concret autour de la création de portfolio et de l’intelligence artificielle.</p>
+        </div>
+        <div class="learning-intro"><span class="learning-status"><span class="status-dot"></span> EN COURS</span><span>Avec <span id="learning-instructor"></span></span></div>
+        <div class="learning-grid" id="learning-list"></div>
+      </section>
+
+      <section class="projects section-band" id="projets">
+        <div class="page-width">
+            <div class="section-heading">
+              <div><p class="eyebrow">02 / SÉLECTION</p><h2>Réalisations<span class="accent">.</span></h2></div>
+              <p class="section-note">Quelques projets qui illustrent mon approche du développement web.</p>
+          </div>
+          <div class="project-grid" id="project-list"></div>
+        </div>
+      </section>
+
+      <section class="profile page-width" id="profil">
+        <div class="profile-label"><p class="eyebrow">03 / À PROPOS</p><span class="profile-stamp">ANIS<br />AMNIALI<br />DÉVELOPPEUR WEB</span></div>
+        <div class="profile-content">
+          <h2>Un interlocuteur unique,<br /><span>de l’idée au concret.</span></h2>
+          <p id="about-copy"></p>
+          <div class="profile-details">
+            <div><p class="eyebrow">EXPERTISE</p><ul id="skills-list"></ul></div>
+            <div><p class="eyebrow">STACK</p><ul id="tools-list"></ul></div>
+          </div>
+          <div class="cv-row"><span id="cv-label"></span><a id="cv-link" class="text-link" href="#contact">Demander mon CV <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact">
+          <div class="page-width contact-inner">
+            <div><p class="eyebrow">04 / CONTACT</p><h2>Un projet en tête ?<br />Parlons-en<span class="accent">.</span></h2><p class="contact-intro">Décrivez-moi votre besoin. Je vous répondrai pour échanger sur les prochaines étapes.</p></div>
+          <div class="contact-links" id="contact-links"></div>
+          <p class="contact-footnote">CRÉATION WEB · APPLICATIONS SUR MESURE · API</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width"><a class="wordmark" href="#accueil">AA<span>.</span></a><span>ANIS AMNIALI · DÉVELOPPEUR WEB · <span id="current-year"></span></span><a href="#accueil">Retour en haut ↑</a></footer>
+
+  </body>
+</html>
